@@ -24,4 +24,46 @@ public class Type implements Serializable {
 
     //菜品类型所有的菜品
     private List<Dish> dishes;
+
+    public Integer getTypeId() {
+        return typeId;
+    }
+
+    public void setTypeId(Integer typeId) {
+        this.typeId = typeId;
+    }
+
+    public Integer getTypeShopId() {
+        return typeShopId;
+    }
+
+    public void setTypeShopId(Integer typeShopId) {
+        this.typeShopId = typeShopId;
+    }
+
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
+    }
+
+    public List<Dish> getDishes() {
+        return dishes;
+    }
+
+    public void setDishes(List<Dish> dishes) {
+        this.dishes = dishes;
+    }
+
+    @Override
+    public String toString() {
+        return "Type{" +
+                "typeId=" + typeId +
+                ", typeShopId=" + typeShopId +
+                ", typeName='" + typeName + '\'' +
+                ", dishes=" + dishes +
+                '}';
+    }
 }

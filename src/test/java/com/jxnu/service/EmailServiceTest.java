@@ -22,4 +22,5 @@ public class EmailServiceTest {
     public void sendEmailVerCode() {
         emailService.sendEmailVerCode("476879110@qq.com","qqqq");
     }
+
 }

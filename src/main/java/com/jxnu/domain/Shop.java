@@ -26,4 +26,82 @@ public class Shop {
     private String shopEmail;
     //店铺密码
     private String shopPassword;
+
+    public Integer getShopId() {
+        return shopId;
+    }
+
+    public void setShopId(Integer shopId) {
+        this.shopId = shopId;
+    }
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
+    public String getShopAddress() {
+        return shopAddress;
+    }
+
+    public void setShopAddress(String shopAddress) {
+        this.shopAddress = shopAddress;
+    }
+
+    public String getShopImgPath() {
+        return shopImgPath;
+    }
+
+    public void setShopImgPath(String shopImgPath) {
+        this.shopImgPath = shopImgPath;
+    }
+
+    public String getShopNotice() {
+        return shopNotice;
+    }
+
+    public void setShopNotice(String shopNotice) {
+        this.shopNotice = shopNotice;
+    }
+
+    public Byte getShopStatus() {
+        return shopStatus;
+    }
+
+    public void setShopStatus(Byte shopStatus) {
+        this.shopStatus = shopStatus;
+    }
+
+    public String getShopEmail() {
+        return shopEmail;
+    }
+
+    public void setShopEmail(String shopEmail) {
+        this.shopEmail = shopEmail;
+    }
+
+    public String getShopPassword() {
+        return shopPassword;
+    }
+
+    public void setShopPassword(String shopPassword) {
+        this.shopPassword = shopPassword;
+    }
+
+    @Override
+    public String toString() {
+        return "Shop{" +
+                "shopId=" + shopId +
+                ", shopName='" + shopName + '\'' +
+                ", shopAddress='" + shopAddress + '\'' +
+                ", shopImgPath='" + shopImgPath + '\'' +
+                ", shopNotice='" + shopNotice + '\'' +
+                ", shopStatus=" + shopStatus +
+                ", shopEmail='" + shopEmail + '\'' +
+                ", shopPassword='" + shopPassword + '\'' +
+                '}';
+    }
 }

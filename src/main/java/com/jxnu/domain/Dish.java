@@ -11,7 +11,7 @@ import java.io.Serializable;
  * @version 1.0
  * @date 2020/3/17 9:01
  */
-@Data
+//@Data
 public class Dish implements Serializable {
 
     //菜品编号
@@ -28,4 +28,73 @@ public class Dish implements Serializable {
     private Integer dishNumber;
     //菜品状态(0被删除，1正常销售)
     private Byte dishStatus;
+
+    public Integer getDishId() {
+        return dishId;
+    }
+
+    public void setDishId(Integer dishId) {
+        this.dishId = dishId;
+    }
+
+    public Integer getDishTypeId() {
+        return dishTypeId;
+    }
+
+    public void setDishTypeId(Integer dishTypeId) {
+        this.dishTypeId = dishTypeId;
+    }
+
+    public String getDishName() {
+        return dishName;
+    }
+
+    public void setDishName(String dishName) {
+        this.dishName = dishName;
+    }
+
+    public String getDishImgPath() {
+        return dishImgPath;
+    }
+
+    public void setDishImgPath(String dishImgPath) {
+        this.dishImgPath = dishImgPath;
+    }
+
+    public Float getDishPrice() {
+        return dishPrice;
+    }
+
+    public void setDishPrice(Float dishPrice) {
+        this.dishPrice = dishPrice;
+    }
+
+    public Integer getDishNumber() {
+        return dishNumber;
+    }
+
+    public void setDishNumber(Integer dishNumber) {
+        this.dishNumber = dishNumber;
+    }
+
+    public Byte getDishStatus() {
+        return dishStatus;
+    }
+
+    public void setDishStatus(Byte dishStatus) {
+        this.dishStatus = dishStatus;
+    }
+
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "dishId=" + dishId +
+                ", dishTypeId=" + dishTypeId +
+                ", dishName='" + dishName + '\'' +
+                ", dishImgPath='" + dishImgPath + '\'' +
+                ", dishPrice=" + dishPrice +
+                ", dishNumber=" + dishNumber +
+                ", dishStatus=" + dishStatus +
+                '}';
+    }
 }
